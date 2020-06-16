@@ -54,6 +54,18 @@ body {
     -ms-transform: translateY(7px);
     -o-transform: translateY(7px); }
 
+.title-link {
+  color: #2a9134;
+  background: #f1fffa;
+  font-size: 1.5rem;
+  padding: 0.625rem; }
+
+.title-underline {
+  height: 3px;
+  width: 250px;
+  background: #2a9134;
+  margin: -20px auto 0 auto; }
+
 /* ----------HEADER TOP ICONS CSS---------- */
 .top-icons .top-social-icons a {
   font-size: 1.5rem;
@@ -160,15 +172,46 @@ header {
   header .homepage-banner .item-3 {
     background: linear-gradient(to right, rgba(42, 145, 52, 0.9), rgba(42, 145, 52, 0.3)), url("../img/banner-3.jpeg") center/cover fixed no-repeat; }
 
-/* ----------HEADER TOP ICONS CSS---------- */
-/* ----------HEADER TOP ICONS CSS---------- */
-/* ----------HEADER TOP ICONS CSS---------- */
-/* ----------HEADER TOP ICONS CSS---------- */
-/* ----------RESPONSIVE CSS---------- */
-@media (min-width: 576px) and (max-width: 767px) {
-  html {
-    font-size: 10px; } }
+/* ----------SKILLS CSS---------- */
+.skill-icon {
+  background: #242424;
+  clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease; }
+  .skill-icon:hover {
+    background: #2a9134;
+    clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%); }
+  .skill-icon:hover span {
+    color: #f1fffa; }
+  .skill-icon span {
+    font-size: 6.25rem;
+    color: #909090;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease; }
 
-@media (max-width: 575px) {
-  html {
-    font-size: 10px; } }
+.skill-info h3 {
+  font-family: 'Permanent Marker', cursive; }
+
+.skill-info p {
+  color: #909090; }
+
+/* ----------ABOUT CSS---------- */
+.about {
+  height: 60vh; }
+  .about #video-modal {
+    height: 50vh;
+    background: linear-gradient(rgba(42, 145, 52, 0.7), rgba(42, 145, 52, 0.3)), url("../img/video-filler.jpeg") center/cover fixed no-repeat;
+    clip-path: polygon(20% 0, 100% 20%, 100% 100%, 0 100%, 0 0); }
+    .about #video-modal .modal-icon {
+      font-size: 5rem;
+      color: #f1fffa; }
+
+/* ---------- CSS---------- */
+/* ---------- CSS---------- */
+/* ----------RESPONSIVE CSS---------- */

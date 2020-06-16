@@ -2,6 +2,7 @@
 $primary-color: #2a9134;
 $main-white: #f1fffa;
 $main-black: #242424;
+$main-gray: #909090;
 
 /* Template bg(background) Color */
 .bgC {
@@ -71,6 +72,21 @@ body {
       -ms-transform: translateY(7px);
       -o-transform: translateY(7px);
     }
+  }
+}
+
+.title {
+  &-link {
+    color: $primary-color;
+    background: $main-white;
+    font-size: 1.5rem;
+    padding: 0.625rem;
+  }
+  &-underline {
+    height: 3px;
+    width: 250px;
+    background: $primary-color;
+    margin: -20px auto 0 auto;
   }
 }
 
@@ -216,13 +232,55 @@ header {
     }
   }
 }
-/* ----------HEADER TOP ICONS CSS---------- */
+/* ----------SKILLS CSS---------- */
+.skill {
+  &-icon {
+    background: $main-black;
+    clip-path: polygon(0 0, 50% 0, 100% 100%, 0 100%);
+    @include ease();
+    &:hover {
+      background: $primary-color;
+      clip-path: polygon(0 0, 60% 0, 100% 100%, 0 100%);
+    }
+    &:hover span {
+      color: $main-white;
+    }
+    span {
+      font-size: 6.25rem;
+      color: $main-gray;
+      @include ease();
+    }
+  }
 
-/* ----------HEADER TOP ICONS CSS---------- */
+  &-info {
+    h3 {
+      font-family: 'Permanent Marker', cursive;
+    }
+    p {
+      color: $main-gray;
+    }
+  }
+}
+/* ----------ABOUT CSS---------- */
+.about {
+  height: 60vh;
+  #video-modal {
+    height: 50vh;
+    background: linear-gradient(
+        rgba($primary-color, 0.7),
+        rgba($primary-color, 0.3)
+      ),
+      url('../img/video-filler.jpeg') center/cover fixed no-repeat;
+    clip-path: polygon(20% 0, 100% 20%, 100% 100%, 0 100%, 0 0);
+    .modal-icon {
+      font-size: 5rem;
+      color: $main-white;
+    }
+  }
+}
+/* ---------- CSS---------- */
 
-/* ----------HEADER TOP ICONS CSS---------- */
-
-/* ----------HEADER TOP ICONS CSS---------- */
+/* ---------- CSS---------- */
 
 /* ----------RESPONSIVE CSS---------- */
 
@@ -240,14 +298,8 @@ header {
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px) {
-  html {
-    font-size: 10px;
-  }
 }
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
-  html {
-    font-size: 10px;
-  }
 }
