@@ -1,0 +1,174 @@
+/* Template Color */
+/* Template bg(background) Color */
+.bgC-primary {
+  background: #2a9134; }
+
+.bgC-secondary {
+  background: #f1fffa; }
+
+/* Text Style */
+.text-slant {
+  font-family: 'Permanent Marker', cursive; }
+
+/* Transition Effect */
+/*=====Global CSS=====*/
+body {
+  font-family: 'Karla', sans-serif;
+  color: #242424;
+  background: #f1fffa; }
+  body a {
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    text-decoration: none; }
+    body a:hover {
+      text-decoration: none; }
+  body button:focus {
+    outline: none; }
+
+.no-padding {
+  padding: 0 !important; }
+
+/* Template Button Effect */
+.link-primary {
+  color: #f1fffa;
+  font-family: 'Permanent Marker', cursive;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border: 0.2rem solid #f1fffa;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease; }
+  .link-primary:hover {
+    color: #2a9134;
+    background: #f1fffa;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+    transform: translateY(7px);
+    -webkit-transform: translateY(7px);
+    -moz-transform: translateY(7px);
+    -ms-transform: translateY(7px);
+    -o-transform: translateY(7px); }
+
+/* ----------HEADER TOP ICONS CSS---------- */
+.top-icons .top-social-icons a {
+  font-size: 1.5rem;
+  color: #f1fffa; }
+  .top-icons .top-social-icons a:hover {
+    color: #242424; }
+
+/* ----------HEADER NAV CSS---------- */
+header {
+  /* end NAV */ }
+  header .navbar {
+    background: #242424;
+    padding: 0.625rem 1.25rem !important; }
+    header .navbar.navbar-background {
+      padding: 0.125rem 1.25rem !important; }
+    header .navbar-brand {
+      color: #2a9134;
+      font-size: 1.875rem;
+      text-transform: uppercase;
+      border: 0.2rem solid #2a9134;
+      padding: 0.4rem;
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      -o-transition: all 1s ease; }
+      header .navbar-brand:hover {
+        background: #2a9134;
+        color: #f1fffa; }
+    header .navbar-toggler {
+      padding: 0.5rem;
+      border: 0.2rem solid #2a9134; }
+      header .navbar-toggler .bar-1,
+      header .navbar-toggler .bar-2,
+      header .navbar-toggler .bar-3 {
+        width: 25px;
+        height: 3px;
+        margin: 0.3rem 0;
+        background: #2a9134;
+        border-radius: 0.1rem;
+        -webkit-border-radius: 0.1rem;
+        -moz-border-radius: 0.1rem;
+        -ms-border-radius: 0.1rem;
+        -o-border-radius: 0.1rem;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        -o-transition: all 1s ease; }
+    header .navbar .change .bar-1 {
+      background: red;
+      transform: rotate(-45deg) translate(-5px, 6px);
+      -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+      -moz-transform: rotate(-45deg) translate(-5px, 6px);
+      -ms-transform: rotate(-45deg) translate(-5px, 6px);
+      -o-transform: rotate(-45deg) translate(-5px, 6px); }
+    header .navbar .change .bar-2 {
+      opacity: 0; }
+    header .navbar .change .bar-3 {
+      background: red;
+      transform: rotate(45deg) translate(-3px, -5px);
+      -webkit-transform: rotate(45deg) translate(-3px, -5px);
+      -moz-transform: rotate(45deg) translate(-3px, -5px);
+      -ms-transform: rotate(45deg) translate(-3px, -5px);
+      -o-transform: rotate(45deg) translate(-3px, -5px); }
+    header .navbar-nav .nav-item {
+      margin: 0.5rem; }
+      header .navbar-nav .nav-item .nav-link {
+        color: #f1fffa;
+        font-size: 1.5rem;
+        padding: 0.625rem 1.25rem;
+        text-transform: capitalize;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        transition: all 1s ease;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        -o-transition: all 1s ease; }
+        header .navbar-nav .nav-item .nav-link:hover {
+          background: #2a9134;
+          color: #f1fffa; }
+    header .navbar-nav .nav-active {
+      background: #2a9134;
+      color: #f1fffa;
+      font-family: 'Permanent Marker', cursive;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px; }
+  header .homepage-banner .item-1,
+  header .homepage-banner .item-2,
+  header .homepage-banner .item-3 {
+    height: 60vh;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%); }
+  header .homepage-banner .item-1 {
+    background: linear-gradient(to right, rgba(42, 145, 52, 0.9), rgba(42, 145, 52, 0.3)), url("../img/banner-1.jpeg") center/cover fixed no-repeat; }
+  header .homepage-banner .item-2 {
+    background: linear-gradient(to right, rgba(42, 145, 52, 0.9), rgba(42, 145, 52, 0.3)), url("../img/banner-2.jpeg") center/cover fixed no-repeat; }
+  header .homepage-banner .item-3 {
+    background: linear-gradient(to right, rgba(42, 145, 52, 0.9), rgba(42, 145, 52, 0.3)), url("../img/banner-3.jpeg") center/cover fixed no-repeat; }
+
+/* ----------HEADER TOP ICONS CSS---------- */
+/* ----------HEADER TOP ICONS CSS---------- */
+/* ----------HEADER TOP ICONS CSS---------- */
+/* ----------HEADER TOP ICONS CSS---------- */
+/* ----------RESPONSIVE CSS---------- */
+@media (min-width: 576px) and (max-width: 767px) {
+  html {
+    font-size: 10px; } }
+
+@media (max-width: 575px) {
+  html {
+    font-size: 10px; } }

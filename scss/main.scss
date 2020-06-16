@@ -1,0 +1,253 @@
+/* Template Color */
+$primary-color: #2a9134;
+$main-white: #f1fffa;
+$main-black: #242424;
+
+/* Template bg(background) Color */
+.bgC {
+  &-primary {
+    background: $primary-color;
+  }
+  &-secondary {
+    background: $main-white;
+  }
+}
+
+/* Text Style */
+.text {
+  &-slant {
+    font-family: 'Permanent Marker', cursive;
+  }
+}
+
+/* Transition Effect */
+@mixin ease {
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+}
+
+/*=====Global CSS=====*/
+body {
+  font-family: 'Karla', sans-serif;
+  color: $main-black;
+  background: $main-white;
+
+  a {
+    @include ease();
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  button:focus {
+    outline: none;
+  }
+}
+.no-padding {
+  padding: 0 !important;
+}
+
+/* Template Button Effect */
+.link {
+  &-primary {
+    color: $main-white;
+    font-family: 'Permanent Marker', cursive;
+    text-transform: uppercase;
+    padding: 0.4rem 0.6rem;
+    border: 0.2rem solid $main-white;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    @include ease();
+    &:hover {
+      color: $primary-color;
+      background: $main-white;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+      transform: translateY(7px);
+      -webkit-transform: translateY(7px);
+      -moz-transform: translateY(7px);
+      -ms-transform: translateY(7px);
+      -o-transform: translateY(7px);
+    }
+  }
+}
+
+/* ----------HEADER TOP ICONS CSS---------- */
+.top-icons {
+  .top-social-icons {
+    a {
+      font-size: 1.5rem;
+      color: $main-white;
+      &:hover {
+        color: $main-black;
+      }
+    }
+  }
+}
+/* ----------HEADER NAV CSS---------- */
+header {
+  .navbar {
+    background: $main-black;
+    padding: 0.625rem 1.25rem !important;
+    &.navbar-background {
+      padding: 0.125rem 1.25rem !important;
+    }
+
+    &-brand {
+      color: $primary-color;
+      font-size: 1.875rem;
+      text-transform: uppercase;
+      border: 0.2rem solid $primary-color;
+      padding: 0.4rem;
+      @include ease();
+      &:hover {
+        background: $primary-color;
+        color: $main-white;
+      }
+    }
+
+    &-toggler {
+      padding: 0.5rem;
+      border: 0.2rem solid $primary-color;
+      .bar-1,
+      .bar-2,
+      .bar-3 {
+        width: 25px;
+        height: 3px;
+        margin: 0.3rem 0;
+        background: $primary-color;
+        border-radius: 0.1rem;
+        -webkit-border-radius: 0.1rem;
+        -moz-border-radius: 0.1rem;
+        -ms-border-radius: 0.1rem;
+        -o-border-radius: 0.1rem;
+        @include ease();
+      }
+    }
+
+    .change {
+      .bar-1 {
+        background: red;
+        transform: rotate(-45deg) translate(-5px, 6px);
+        -webkit-transform: rotate(-45deg) translate(-5px, 6px);
+        -moz-transform: rotate(-45deg) translate(-5px, 6px);
+        -ms-transform: rotate(-45deg) translate(-5px, 6px);
+        -o-transform: rotate(-45deg) translate(-5px, 6px);
+      }
+      .bar-2 {
+        opacity: 0;
+      }
+      .bar-3 {
+        background: red;
+        transform: rotate(45deg) translate(-3px, -5px);
+        -webkit-transform: rotate(45deg) translate(-3px, -5px);
+        -moz-transform: rotate(45deg) translate(-3px, -5px);
+        -ms-transform: rotate(45deg) translate(-3px, -5px);
+        -o-transform: rotate(45deg) translate(-3px, -5px);
+      }
+    }
+
+    &-nav {
+      .nav-item {
+        margin: 0.5rem;
+
+        .nav-link {
+          color: $main-white;
+          font-size: 1.5rem;
+          padding: 0.625rem 1.25rem;
+          text-transform: capitalize;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          @include ease();
+          &:hover {
+            background: $primary-color;
+            color: $main-white;
+          }
+        }
+      }
+      .nav-active {
+        background: $primary-color;
+        color: $main-white;
+        font-family: 'Permanent Marker', cursive;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+      }
+    }
+  } /* end NAV */
+
+  .homepage-banner {
+    .item-1,
+    .item-2,
+    .item-3 {
+      height: 60vh;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
+    }
+    .item-1 {
+      background: linear-gradient(
+          to right,
+          rgba($primary-color, 0.9),
+          rgba($primary-color, 0.3)
+        ),
+        url('../img/banner-1.jpeg') center/cover fixed no-repeat;
+    }
+    .item-2 {
+      background: linear-gradient(
+          to right,
+          rgba($primary-color, 0.9),
+          rgba($primary-color, 0.3)
+        ),
+        url('../img/banner-2.jpeg') center/cover fixed no-repeat;
+    }
+    .item-3 {
+      background: linear-gradient(
+          to right,
+          rgba($primary-color, 0.9),
+          rgba($primary-color, 0.3)
+        ),
+        url('../img/banner-3.jpeg') center/cover fixed no-repeat;
+    }
+  }
+}
+/* ----------HEADER TOP ICONS CSS---------- */
+
+/* ----------HEADER TOP ICONS CSS---------- */
+
+/* ----------HEADER TOP ICONS CSS---------- */
+
+/* ----------HEADER TOP ICONS CSS---------- */
+
+/* ----------RESPONSIVE CSS---------- */
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+  html {
+    font-size: 10px;
+  }
+}
