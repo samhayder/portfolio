@@ -202,16 +202,75 @@ header {
   color: #909090; }
 
 /* ----------ABOUT CSS---------- */
-.about {
-  height: 60vh; }
-  .about #video-modal {
-    height: 50vh;
-    background: linear-gradient(rgba(42, 145, 52, 0.7), rgba(42, 145, 52, 0.3)), url("../img/video-filler.jpeg") center/cover fixed no-repeat;
-    clip-path: polygon(20% 0, 100% 20%, 100% 100%, 0 100%, 0 0); }
-    .about #video-modal .modal-icon {
-      font-size: 5rem;
-      color: #f1fffa; }
+.about #video-modal {
+  height: 50vh;
+  background: linear-gradient(rgba(42, 145, 52, 0.7), rgba(42, 145, 52, 0.3)), url("../img/video-filler.jpeg") center/cover fixed no-repeat;
+  clip-path: polygon(100% 15%, 100% 100%, 0 100%, 0 5%); }
+  .about #video-modal .modal-icon {
+    font-size: 5rem;
+    color: #f1fffa; }
 
-/* ---------- CSS---------- */
+.about .about-content {
+  background: #909090;
+  clip-path: polygon(100% 0, 100% 100%, 0 95%, 0 0); }
+  .about .about-content .title a {
+    background: #909090; }
+  .about .about-content .about-progress {
+    background: linear-gradient(rgba(36, 36, 36, 0.7), rgba(36, 36, 36, 0.7)), url("../img/video-filler.jpeg") center/cover fixed no-repeat;
+    outline: 5px solid #2a9134;
+    outline-offset: 10px; }
+  .about .about-content .link-primary {
+    border-color: #2a9134; }
+    .about .about-content .link-primary:hover {
+      border-color: #f1fffa; }
+
+/* ---------- PROJECTS CSS---------- */
+.projects .img-container {
+  position: relative;
+  background: linear-gradient(rgba(224, 224, 14, 0.7), rgba(224, 224, 14, 0.7));
+  overflow: hidden;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease; }
+  .projects .img-container:hover .project-link {
+    margin-top: 0;
+    opacity: 1; }
+  .projects .img-container .project-img {
+    opacity: 1;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease; }
+    .projects .img-container .project-img:hover {
+      opacity: 0.3;
+      transform: scale(1.3);
+      -webkit-transform: scale(1.3);
+      -moz-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+      -o-transform: scale(1.3); }
+  .projects .img-container .project-link {
+    font-size: 4rem;
+    color: #2a9134;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease; }
+    .projects .img-container .project-link:hover {
+      color: #242424; }
+
 /* ---------- CSS---------- */
 /* ----------RESPONSIVE CSS---------- */
