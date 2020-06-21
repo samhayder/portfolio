@@ -272,5 +272,66 @@ header {
     .projects .img-container .project-link:hover {
       color: #242424; }
 
+/* ---------- CURRENT PROJECTS CSS---------- */
+.current-projects {
+  background: #909090;
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%); }
+  .current-projects .current-projects-photos {
+    min-height: 50vh;
+    position: relative; }
+    .current-projects .current-projects-photos .current-project-img {
+      width: 50%;
+      height: 60%;
+      position: absolute;
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      -o-transition: all 1s ease; }
+      .current-projects .current-projects-photos .current-project-img:hover {
+        z-index: 50;
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2); }
+      .current-projects .current-projects-photos .current-project-img-1 {
+        top: 0;
+        left: 10%;
+        z-index: 30;
+        transform: rotate(-15deg);
+        -webkit-transform: rotate(-15deg);
+        -moz-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+        -o-transform: rotate(-15deg); }
+      .current-projects .current-projects-photos .current-project-img-2 {
+        top: 0;
+        left: 40%;
+        z-index: 40;
+        transform: rotate(8deg);
+        -webkit-transform: rotate(8deg);
+        -moz-transform: rotate(8deg);
+        -ms-transform: rotate(8deg);
+        -o-transform: rotate(8deg); }
+      .current-projects .current-projects-photos .current-project-img-3 {
+        top: 40%;
+        left: 8%;
+        transform: rotate(-5deg);
+        -webkit-transform: rotate(-5deg);
+        -moz-transform: rotate(-5deg);
+        -ms-transform: rotate(-5deg);
+        -o-transform: rotate(-5deg); }
+      .current-projects .current-projects-photos .current-project-img-4 {
+        top: 41%;
+        left: 40%;
+        transform: rotate(38deg);
+        -webkit-transform: rotate(38deg);
+        -moz-transform: rotate(38deg);
+        -ms-transform: rotate(38deg);
+        -o-transform: rotate(38deg); }
+
+/* ---------- CSS---------- */
+/* ---------- CSS---------- */
+/* ---------- CSS---------- */
 /* ---------- CSS---------- */
 /* ----------RESPONSIVE CSS---------- */
