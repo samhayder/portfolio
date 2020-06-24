@@ -330,7 +330,49 @@ header {
         -ms-transform: rotate(38deg);
         -o-transform: rotate(38deg); }
 
-/* ---------- CSS---------- */
+/* ---------- POSTS CSS---------- */
+#posts {
+  background: #f1fffa; }
+  #posts .card,
+  #posts .card-body,
+  #posts .card-footer {
+    background: transparent;
+    border: none;
+    border-radius: 0 !important; }
+  #posts .card {
+    position: relative;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease; }
+    #posts .card:hover .post-status {
+      opacity: 1; }
+    #posts .card .card-img-top {
+      border-radius: 0 !important; }
+    #posts .card .post-status {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #dd0000;
+      display: inline-block;
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      opacity: 0; }
+    #posts .card .post-link {
+      color: #2a9134;
+      text-transform: capitalize;
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      -o-transition: all 1s ease; }
+      #posts .card .post-link:hover {
+        color: #dd0000; }
+
 /* ---------- CSS---------- */
 /* ---------- CSS---------- */
 /* ---------- CSS---------- */

@@ -418,8 +418,48 @@ header {
     }
   }
 }
-/* ---------- CSS---------- */
+/* ---------- POSTS CSS---------- */
+#posts {
+  background: $main-white;
+  .card,
+  .card-body,
+  .card-footer {
+    background: transparent;
+    border: none;
+    border-radius: 0 !important;
+  }
 
+  .card {
+    position: relative;
+    @include ease();
+    &:hover .post-status {
+      opacity: 1;
+    }
+
+    .card-img-top {
+      border-radius: 0 !important;
+    }
+
+    .post-status {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #dd0000;
+      display: inline-block;
+      @include ease();
+      opacity: 0;
+    }
+
+    .post-link {
+      color: $primary-color;
+      text-transform: capitalize;
+      @include ease();
+      &:hover {
+        color: #dd0000;
+      }
+    }
+  }
+}
 /* ---------- CSS---------- */
 
 /* ---------- CSS---------- */
