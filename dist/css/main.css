@@ -31,6 +31,9 @@ body {
 .no-padding {
   padding: 0 !important; }
 
+.height-30 {
+  min-height: 30vh; }
+
 /* Template Button Effect */
 .link-primary {
   color: #f1fffa;
@@ -53,6 +56,21 @@ body {
     -moz-transform: translateY(7px);
     -ms-transform: translateY(7px);
     -o-transform: translateY(7px); }
+
+.link-contact {
+  color: #f1fffa;
+  border: 2px solid #f1fffa;
+  text-transform: capitalize;
+  border-radius: 0;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease; }
+  .link-contact:hover {
+    color: #2a9134;
+    border-color: #2a9134;
+    background: #f1fffa; }
 
 .title-link {
   color: #2a9134;
@@ -373,7 +391,20 @@ header {
       #posts .card .post-link:hover {
         color: #dd0000; }
 
-/* ---------- CSS---------- */
+/* ---------- CONTACT CSS---------- */
+.contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/banner-2.jpeg") center/cover fixed no-repeat;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%); }
+  .contact .form-control {
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0; }
+  .contact input::placeholder {
+    color: white !important;
+    font-size: 1.5rem; }
+
 /* ---------- CSS---------- */
 /* ---------- CSS---------- */
 /* ----------RESPONSIVE CSS---------- */

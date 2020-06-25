@@ -51,6 +51,9 @@ body {
 .no-padding {
   padding: 0 !important;
 }
+.height-30 {
+  min-height: 30vh;
+}
 
 /* Template Button Effect */
 .link {
@@ -71,6 +74,19 @@ body {
       -moz-transform: translateY(7px);
       -ms-transform: translateY(7px);
       -o-transform: translateY(7px);
+    }
+  }
+
+  &-contact {
+    color: $main-white;
+    border: 2px solid $main-white;
+    text-transform: capitalize;
+    border-radius: 0;
+    @include ease();
+    &:hover {
+      color: $primary-color;
+      border-color: $primary-color;
+      background: $main-white;
     }
   }
 }
@@ -460,8 +476,24 @@ header {
     }
   }
 }
-/* ---------- CSS---------- */
+/* ---------- CONTACT CSS---------- */
+.contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../img/banner-2.jpeg') center/cover fixed no-repeat;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
 
+  .form-control {
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    border-radius: 0;
+  }
+  input::placeholder {
+    color: white !important;
+    font-size: 1.5rem;
+  }
+}
 /* ---------- CSS---------- */
 
 /* ---------- CSS---------- */
