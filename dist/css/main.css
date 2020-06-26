@@ -405,6 +405,45 @@ header {
     color: white !important;
     font-size: 1.5rem; }
 
-/* ---------- CSS---------- */
+/* ---------- VALUES CSS---------- */
+.values .value {
+  position: relative;
+  text-align: center; }
+  .values .value:hover .value-icon {
+    background: #2a9134;
+    transform: scale(1.2); }
+  .values .value:hover .value-number {
+    color: #f1fffa;
+    background: #909090;
+    transform: scale(0.9); }
+  .values .value .value-icon {
+    font-size: 3rem;
+    padding: 1.5rem 2rem;
+    background: #909090;
+    color: #f1fffa;
+    border-radius: 50%;
+    position: relative;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease; }
+  .values .value .value-number {
+    padding: 0.8rem 1rem;
+    background: #2a9134;
+    color: #909090;
+    border-radius: 50%;
+    position: absolute;
+    top: -12%;
+    left: 60%;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease; }
+  .values .value h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-style: italic; }
+
 /* ---------- CSS---------- */
 /* ----------RESPONSIVE CSS---------- */
