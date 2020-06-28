@@ -538,6 +538,19 @@ header {
     }
   }
 }
+/* ---------- REVIEWS CSS---------- */
+#reviews {
+  background: linear-gradient(
+      rgba($primary-color, 0.7),
+      rgba($primary-color, 0.7)
+    ),
+    url('../img/banner-1.jpeg');
+  color: $main-white;
+
+  .rating i {
+    color: yellow;
+  }
+}
 /* ---------- CSS---------- */
 
 /* ----------RESPONSIVE CSS---------- */

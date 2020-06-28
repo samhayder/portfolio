@@ -445,5 +445,12 @@ header {
     font-family: 'Permanent Marker', cursive;
     font-style: italic; }
 
+/* ---------- REVIEWS CSS---------- */
+#reviews {
+  background: linear-gradient(rgba(42, 145, 52, 0.7), rgba(42, 145, 52, 0.7)), url("../img/banner-1.jpeg");
+  color: #f1fffa; }
+  #reviews .rating i {
+    color: yellow; }
+
 /* ---------- CSS---------- */
 /* ----------RESPONSIVE CSS---------- */
