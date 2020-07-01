@@ -452,5 +452,69 @@ header {
   #reviews .rating i {
     color: yellow; }
 
+/* ---------- TEAMS CSS---------- */
+#teams .member-wrapper {
+  background: #2a9134;
+  overflow: hidden;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease; }
+  #teams .member-wrapper:hover .member-img {
+    transform: translateY(-70px);
+    opacity: 0.5; }
+  #teams .member-wrapper:hover .member-info-wrap {
+    margin-bottom: 0;
+    opacity: 1;
+    visibility: visible; }
+  #teams .member-wrapper .member-img {
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease; }
+  #teams .member-wrapper .member-info-wrap {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background: #2a9134;
+    padding: 1rem;
+    margin-bottom: -100px;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    opacity: 0;
+    visibility: hidden; }
+    #teams .member-wrapper .member-info-wrap .member-social-icon > a {
+      font-size: 1.5rem;
+      color: #f1fffa;
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      -o-transition: all 1s ease; }
+      #teams .member-wrapper .member-info-wrap .member-social-icon > a:hover {
+        background: #f1fffa;
+        color: #2a9134;
+        padding: 0.5rem;
+        border-radius: 50%; }
+    #teams .member-wrapper .member-info-wrap .member-icon > a {
+      font-size: 4rem;
+      color: #f1fffa;
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      -o-transition: all 1s ease; }
+      #teams .member-wrapper .member-info-wrap .member-icon > a:hover {
+        background: #f1fffa;
+        color: #2a9134;
+        padding: 0.5rem;
+        border-radius: 50%; }
+
 /* ---------- CSS---------- */
 /* ----------RESPONSIVE CSS---------- */

@@ -551,6 +551,65 @@ header {
     color: yellow;
   }
 }
+/* ---------- TEAMS CSS---------- */
+#teams {
+  .member-wrapper {
+    background: $primary-color;
+    overflow: hidden;
+    @include ease();
+
+    &:hover .member-img {
+      transform: translateY(-70px);
+      opacity: 0.5;
+    }
+    &:hover .member-info-wrap {
+      margin-bottom: 0;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .member-img {
+      @include ease();
+    }
+
+    .member-info-wrap {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      background: $primary-color;
+      padding: 1rem;
+      margin-bottom: -100px;
+      @include ease();
+      opacity: 0;
+      visibility: hidden;
+
+      .member-social-icon > a {
+        font-size: 1.5rem;
+        color: $main-white;
+        @include ease();
+        &:hover {
+          background: $main-white;
+          color: $primary-color;
+          padding: 0.5rem;
+          border-radius: 50%;
+        }
+      }
+
+      .member-icon > a {
+        font-size: 4rem;
+        color: $main-white;
+        @include ease();
+        &:hover {
+          background: $main-white;
+          color: $primary-color;
+          padding: 0.5rem;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
 /* ---------- CSS---------- */
 
 /* ----------RESPONSIVE CSS---------- */
