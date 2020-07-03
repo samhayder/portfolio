@@ -610,8 +610,35 @@ header {
     }
   }
 }
-/* ---------- CSS---------- */
+/* ---------- CONTACT-FORM CSS---------- */
+#contact-form {
+  min-height: 80vh;
+  background: linear-gradient(
+      rgba($primary-color, 0.5),
+      rgba($primary-color, 0.5)
+    ),
+    url('../img/banner-1.jpeg') center/cover fixed no-repeat;
 
+  .card {
+    background: rgba(0, 0, 0, 0.5);
+    @include ease();
+    &:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .input-group-text {
+      background: $primary-color;
+      border-color: $primary-color;
+    }
+  }
+}
+/* ---------- FOOTER CSS---------- */
+#footer {
+  background: $main-gray;
+  .footer-icons > a {
+    font-size: 2rem;
+  }
+}
 /* ----------RESPONSIVE CSS---------- */
 
 // Extra large devices (large desktops, 1200px and up)

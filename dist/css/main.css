@@ -516,5 +516,27 @@ header {
         padding: 0.5rem;
         border-radius: 50%; }
 
-/* ---------- CSS---------- */
+/* ---------- CONTACT-FORM CSS---------- */
+#contact-form {
+  min-height: 80vh;
+  background: linear-gradient(rgba(42, 145, 52, 0.5), rgba(42, 145, 52, 0.5)), url("../img/banner-1.jpeg") center/cover fixed no-repeat; }
+  #contact-form .card {
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease; }
+    #contact-form .card:hover {
+      background: rgba(0, 0, 0, 0.8); }
+    #contact-form .card .input-group-text {
+      background: #2a9134;
+      border-color: #2a9134; }
+
+/* ---------- FOOTER CSS---------- */
+#footer {
+  background: #909090; }
+  #footer .footer-icons > a {
+    font-size: 2rem; }
+
 /* ----------RESPONSIVE CSS---------- */
